@@ -1,0 +1,12 @@
+/.idea
+/nbproject/
+/.buildpath
+/.project
+.DS_Store
+._.DS_Store
+/.settings/org.eclipse.php.core.prefs
+.DS_Store
+/.settings/*.prefs
+.fecsrc
+.fecsignore
+node_modules/
