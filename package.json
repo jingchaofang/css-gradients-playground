@@ -1,0 +1,26 @@
+{
+  "name": "gradients-playground",
+  "version": "1.0.0",
+  "description": "css gradients playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jingchaofang/gradients-playground.git"
+  },
+  "keywords": [
+    "css",
+    "gradients"
+  ],
+  "author": "jingchaofang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jingchaofang/gradients-playground/issues"
+  },
+  "homepage": "https://github.com/jingchaofang/gradients-playground#readme",
+  "devDependencies": {
+    "less": "^2.7.3"
+  }
+}
