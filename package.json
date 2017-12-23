@@ -4,7 +4,8 @@
   "description": "css gradients playground",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "lessc ./less/demo.less > ./dist/demo.css && lessc ./less/demo.less > ./dist/demo.min.css --clean-css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/jingchaofang/gradients-playground#readme",
   "devDependencies": {
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "less-plugin-clean-css": "^1.5.1"
   }
 }

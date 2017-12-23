@@ -1,0 +1,74 @@
+/**
+ * @file css渐变
+ * @author jingchaofang <jingo@turingca.com>
+ */
+/**
+ * 线性渐变gradients
+ * @param type 渐变类型,线性渐变linear;径向渐变radial,由它们的中心定义
+ * @param angle 角度(deg),向下180(默认)/向上0/向左-90/向右90
+ * @param color 渐变颜色结点、颜色占比%
+ * @usage less:
+ *        .gradients(linear;0;red,blue); 注意这里传参用的分号分割
+ */
+/**
+ * 径向渐变gradients
+ * @param type  渐变类型,线性渐变linear;径向渐变radial,由它们的中心定义
+ * @param shape 渐变形状,可以是值circle(圆形)或ellipse(椭圆形,默认)
+ *        size  用来确定径向渐变的结束形状大小,它可以是以下四个值：closest-side,farthest-side,closest-corner,farthest-corner
+ *            circle(圆形)下size可能显式设置为<length>。表示的是用长度值指定径向渐变的横向或纵向直径长度，
+ *            并根据横向和纵向的直径来确定径向渐变的形状是圆或者是椭圆。此值不能负值。
+ *            ellipse(椭圆形)下size可能显式设置为［<length>|<percentage>］。主要用来设置椭圆的大小。
+ *            第一个值代表椭圆的水平半径，第二个值代表垂直半径。这两个值除了使用<length>定义大小之外还可以使用<percentage>来定义这两半径大小。
+ *            使用<percentage>定义值是相对于径向渐变容器的尺寸。同样不能为负值。
+ *        position 定义径向渐变的圆心位置，默认为center
+ *            <length>：用长度值指定径向渐变圆心的横坐标或纵坐标。可以为负值。
+ *            <percentage>：用百分比指定径向渐变圆心的横坐标或纵坐标。可以为负值。
+ *            left：设置左边为径向渐变圆心的横坐标值。
+ *            center：设置中间为径向渐变圆心的横坐标值或纵坐标。
+ *            right：设置右边为径向渐变圆心的横坐标值。
+ *            top：设置顶部为径向渐变圆心的纵标值。
+ *            bottom：设置底部为径向渐变圆心的纵标值。
+ * @param color 渐变颜色结点、颜色占比%   
+ * 例：-webkit-radial-gradient(farthest-side circle at 50% 75%, rgb(220, 75, 200),rgb(0, 0, 75));
+ */
+/**
+ * 基础角标样式
+ * 伸缩性前提：若非容器项目，需显示赋予display:inline-block;
+ * 应用绑定在了span上，非容器项目，需inline-block
+ * @param  {[type]} @h  高度
+ * @param  {[type]} @p 内边距，居中伸缩
+ * @param  {[type]} @fs 文本字体大小
+ * @param  {[type]} @c 文本色
+ * @param  {[type]} @r 弧度
+ * @param  {[type]} @bg 背景色
+ */
+.gradient-tag {
+  display: inline-block;
+  padding: 0 8px;
+  height: 28px;
+  line-height: 29px;
+  font-size: 12px;
+  color: #fcfcfc;
+  border-radius: 4px;
+  vertical-align: bottom;
+  white-space: nowrap;
+  background: none;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.gradient-tag.blue {
+  background-image: -webkit-linear-gradient(-50deg, #65bfff, #1280ff);
+  background-image: linear-gradient(140deg, #65bfff, #1280ff);
+}
+.gradient-tag.orange {
+  background-image: -webkit-linear-gradient(-50deg, #feca1e, #ff9f00);
+  background-image: linear-gradient(140deg, #feca1e, #ff9f00);
+}
+.gradient-tag.green {
+  background-image: -webkit-linear-gradient(-50deg, #9ddc33, #71c812);
+  background-image: linear-gradient(140deg, #9ddc33, #71c812);
+}
+.gradient-tag.pink {
+  background-image: -webkit-linear-gradient(-50deg, #ff8f99, #f64a64);
+  background-image: linear-gradient(140deg, #ff8f99, #f64a64);
+}
