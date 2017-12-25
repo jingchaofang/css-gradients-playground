@@ -1,9 +1,11 @@
 @import 'mixin.less';
-@px-base: 3px;
+@import 'normalize.less';
+@px: 3px;
+@skin: ios;
 .gradient-tag {
     .install-tag(84,24,36,#fcfcfc,12,none);
-    margin-right: 36/@px-base;
-    margin-bottom: 60/@px-base;
+    margin-right: 36/@px;
+    margin-bottom: 60/@px;
     &.blue {
         .gradients(linear;140;#65bfff,#1280ff);
     }
