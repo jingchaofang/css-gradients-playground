@@ -46,23 +46,12 @@ li {
   word-break: break-all;
 }
 
-body when not(@skin =ios) {
-  /**
-     * 走系统字体设置
-     * 当所有的字体都找不到时，使用sans-serif非衬线字体在显示器中的显示效果会比较好
-     */
-  font-family: sans-serif;
-  background-color: #fcfcfc;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-}
-
-body when(@skin =ios) {
+body {
   font-family: Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, sans-serif;
   background-color: #fcfcfc;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }
 
 em,

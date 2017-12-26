@@ -11,8 +11,8 @@
  *        .gradients(linear;0;red,blue); 注意这里传参用的分号分割
  */
 .gradients(@type;@angle;@color) when(@type = linear) {
-    background-image: -webkit-linear-gradient(unit((90-@angle),deg), @color);
-    background-image: linear-gradient(unit(@angle,deg), @color);
+    background-image: -webkit-linear-gradient(unit((90-@angle),deg); @color);
+    background-image: linear-gradient(unit(@angle,deg); @color);
 }
 /**
  * 径向渐变gradients

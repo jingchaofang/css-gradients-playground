@@ -1,21 +1,115 @@
+@import 'variables.less';
 @import 'mixin.less';
 @import 'normalize.less';
-@px: 3px;
-@skin: ios;
+
+
+/**
+ * 标签
+ */
+
+.tags {
+  font-size: 0;
+}
+
 .gradient-tag {
-    .install-tag(84,24,36,#fcfcfc,12,none);
-    margin-right: 36/@px;
-    margin-bottom: 60/@px;
-    &.blue {
-        .gradients(linear;140;#65bfff,#1280ff);
-    }
-    &.orange {
-        .gradients(linear;140;#feca1e,#ff9f00);
-    }
-    &.green {
-        .gradients(linear;140;#9ddc33,#71c812);
-    }
-    &.pink {
-        .gradients(linear;140;#ff8f99,#f64a64);
-    }
+  .install-tag(84, 24, 36, #fcfcfc, 12, none);
+  margin-right: 36/@px;
+  margin-bottom: 60/@px;
+  &.blue {
+    .gradients(linear;
+    140;
+    #65bfff, #1280ff);
+  }
+  &.orange {
+    .gradients(linear;
+    140;
+    #feca1e, #ff9f00);
+  }
+  &.green {
+    .gradients(linear;
+    140;
+    #9ddc33, #71c812);
+  }
+  &.pink {
+    .gradients(linear;
+    140;
+    #ff8f99, #f64a64);
+  }
+}
+
+
+/**
+ * 书脊
+ */
+
+.book-spine {
+  position: relative;
+  width: 30%;
+  padding-top: 40%;
+  margin: 0 auto;
+  border-right: 2px solid #d8d8d8;
+  background: url(http://book.img.ireader.com/idc_1/group6/M00/C0/FE/CmQUN1o7iB2EeIFkAAAAAMbVRqI130904594.jpg?v=XKXr0t0U&t=CmQUN1o7iB0.) #dedede no-repeat;
+  background-size: cover;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .gradients(linear, 90, @spine);
+  }
+}
+
+/**
+ * 进度条
+ */
+
+.progress {
+  margin: 4px 4%;
+  height: 24px;
+  background-color: #fbd249;
+  .gradients(linear; 90; #e8554d 100%, #fbd249);
+  background-repeat: no-repeat;
+}
+
+.progress-wrap {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 4px 4%;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #dedede;
+}
+.progress-percent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #dedede;
+}
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #fbd249;
+  .gradients(linear; 90; #e8554d, #fbd249);
+  background-repeat: no-repeat;
+}
+
+.gradients-progress {
+  margin: 4px 4%;
+  height: 24px;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+}
+
+.transition-progress {
+  margin: 4px 4%;
+  height: 24px;
+  background-color: #fbd249;
+  .gradients(linear; 90; #e8554d 80%, #fbd249);
+  background-repeat: no-repeat;
 }
